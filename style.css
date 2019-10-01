@@ -1,0 +1,178 @@
+/* Colors and Fonts */
+body {
+	background-color: #a9c4dd; /* website background color */
+	color: steelblue; /* text color */
+	font-family: 'Annie Use Your Telescope', cursive; /* default font style for all text */
+	font-size: 21px; /*	good default font size for readable text */
+	font-weight: lighter; /* makes all text lighter in boldness */
+
+	border: 5px solid black;
+}
+
+/* group selector - design for all headers */
+h1, h2, h3 {
+	font-family:'Shadows Into Light', cursive; /* have the same font family for all the headers, different from the other text */
+	text-transform: uppercase; /* automatically set any text here to uppercase characters */
+}
+
+/* design my main Header */
+h1 {
+	color: #b3c3e7;
+	background-color: #7191b0;
+
+	font-size: 32px;
+	font-weight: 500; /* boldness of the text, set from 100 to 900 */
+	letter-spacing: 10px;
+	line-height: 2;
+	text-align: center;
+
+	text-shadow: 2px 2px 2px #aaa; /* add shadow effect (from Google Fonts Guide) */
+	/*
+	font-style: italic;
+	*/
+}
+
+/* group selector - design for my sub-headers */
+h2, h3 {
+	color: steelblue; /* CHANGE TO LIGHTER COLOR THAN HEADER 1  avec rgb ()*/
+
+	font-size: 28px;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
+h2 {
+
+}
+
+/* for links */
+a {
+	text-decoration: none; /* kills the text decorations for my links */
+	color: #3797f0; /* text color of all links */
+
+	font-family: 'Nanum Pen Script', cursive;
+	font-weight: 600; /* bolder than the other text */
+
+	/* CSS transition */
+	transition: color 0.3s ease; /* gives a smooth transition for when you hover over a link */
+}
+
+/* pseudo class to change what happens with links when I hover my mouse over the link (designing the 'hover' state of the links) */
+a:hover {
+	color: slateblue;
+	font-weight: 700; /* bolden when you hover */
+}
+
+/* CUSTOM DESIGN WITH CLASS */
+
+/* start by designing our main container */
+.container {
+	width: 700px;
+	margin: 40px auto;
+}
+
+/* formatting conditions when mobile tool is not large enough to display 700px */
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+.card-sky {
+	background: rgba(114,188,207,0.4);
+	padding: 10px 10px 25px 10px;
+	box-shadow: 0px 10px 30px rgba(0,0,0,.2);
+	border-radius: 4px;
+	margin: 30px 20px;
+	text-align: center;
+}
+
+.card-sky:hover {
+	border: 1px solid white;
+}
+
+.img-circle {
+	border-radius: 50%; /* creates perfect circle picture */
+}
+
+.btn-blue {
+	background-color: #7191b0;
+	color: white;
+	padding: 15px 20px;
+	border-radius: 4px;
+
+	margin: 40px;
+}
+
+.btn-blue:hover {
+	background-color: black;
+	color: white;
+}
+
+.list-inline {
+	list-style: none; /* removes the bullet points of the unlist */
+	padding-left: 0px; /* kill the padding on the left from the removed bullet points */
+}
+
+.list-inline li {
+	display: inline; /* displays the icons horizontally */
+	padding: 0px 25px; /* add som left/right padding between list items */
+}
+
+.list-inline i {
+	font-size: 50px;
+	color: #7191b0;
+}
+
+.list-inline i:hover  {
+	font-size: 50px;
+	color: black;
+}
+
+/* page-specific design adjustments using id */
+#introduction p {
+	margin-bottom: 40px;
+}
+
+/* make the bio paragraph bolder than the sub-header stuff */
+#bio {
+	font-weight: bold;
+}
+
+
+
+/*
+	
+    background: white;
+    padding: 60px;
+    margin: 50px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,.1);
+    border-radius: 4px;
+*/
+
+/* CSS rules:
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Homemade Apple', cursive;
+font-family: 'Nothing You Could Do', cursive;
+font-family: 'Give You Glory', cursive;
+font-family: 'Amatic SC', cursive;
+font-family: 'Nanum Pen Script', cursive;
+font-family: 'Annie Use Your Telescope', cursive;
+*/
